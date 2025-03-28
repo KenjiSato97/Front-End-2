@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>ATV4</title>
+    <script src="ATV4.js"></script>
+</head>
+<body>
+    <script>
+        // Obter o preço e a quantidade do usuário
+        var precoUnitario = parseFloat(prompt("Digite o preço unitário do produto:"));
+        var quantidade = parseInt(prompt("Digite a quantidade comprada:"));
+
+        // Calcular o valor total da compra
+        var valorTotal = calcularTotal(precoUnitario, quantidade);
+
+        // Aplicar desconto, se aplicável
+        var valorFinal = aplicarDesconto(valorTotal);
+
+        // Exibir o resumo da compra
+        exibirResumo(valorTotal, valorFinal);
+    </script>
+</body>
+</html>
