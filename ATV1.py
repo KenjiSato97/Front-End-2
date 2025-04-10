@@ -16,7 +16,6 @@ def gerador_de_generos():
     for i in range(5000000):
         generos.append(random.choice(['M', 'F']))
     return generos
-
 #Gerar um DataFrame com as alturas e generos
 def gerar_dataframe():
     df = pd.DataFrame()
