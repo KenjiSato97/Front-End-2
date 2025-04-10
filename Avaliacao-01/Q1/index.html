@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Questão 01</title>
+    <link rel="stylesheet" href="/Avaliacao-01/Q1/style.css">
+    <script src="Q1.js" defer></script>
+</head>
+<body>
+    <h1>Resultado</h1>
+    <h2>Programa que calcula e escreve o número de anos necessários para que a população do país A ultrapasse ou iguale a população do país B, mantidas as taxas de crescimento. Habitantes do país A: 80000, habitantes do país B: 200000, taxa de crescimento do país A: 3% e  taxa de crescimento do país B: 1,5%</h2>
+    <p id="anos"></p>
+    <p id="populacaoA"></p>
+    <p id="populacaoB"></p>
+
+    <script>
+        function taxaCrescimento(populacaoA, populacaoB, taxaA, taxaB) {
+            let anos = 0;
+            while (populacaoA < populacaoB) {
+                populacaoA += populacaoA * taxaA;
+                populacaoB += populacaoB * taxaB;
+                anos++;
+            }
+            return { anos, populacaoA, populacaoB };
+        }
+
+        const populacaoA = 80000;
+        const populacaoB = 200000;
+        const taxaCrescimentoA = 0.03;
+        const taxaCrescimentoB = 0.015;
+
+        const resultado = taxaCrescimento(populacaoA, populacaoB, taxaCrescimentoA, taxaCrescimentoB);
+
+        document.getElementById('anos').textContent = `Anos necessários: ${resultado.anos}`;
+        document.getElementById('populacaoA').textContent = `População A: ${Math.round(resultado.populacaoA)}`;
+        document.getElementById('populacaoB').textContent = `População B: ${Math.round(resultado.populacaoB)}`;
+    </script>
+</body>
+</html>

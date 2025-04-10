@@ -6,14 +6,14 @@ import pandas as pd
 #Função geradora de alturas (de 50 a 220 em centimentros) de 15 pessoas
 def gerador_de_alturas():
     alturas = []
-    for i in range(15):
+    for i in range(5000000):
         alturas.append(random.randint(50, 220))
     return alturas
 
 #Função geradora de generos (M ou F) de 15 pessoas
 def gerador_de_generos():
     generos = []
-    for i in range(15):
+    for i in range(5000000):
         generos.append(random.choice(['M', 'F']))
     return generos
 
