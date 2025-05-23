@@ -1,0 +1,58 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    font-family: Arial, sans-serif;
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+}
+h1 {
+    color: #2c3e50;
+    text-align: center;
+}
+.aluno {
+    background-color: #f8f9fa;
+    border: 1px solid #ddd;
+    padding: 15px;
+    margin-bottom: 15px;
+    border-radius: 5px;
+}
+.aluno h3 {
+    margin-top: 0;
+    color: #3498db;
+}
+.info {
+    margin-bottom: 5px;
+}
+#resultado {
+    margin-top: 20px;
+}
+button {
+    background-color: #3498db;
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    margin-bottom: 15px;
+}
+button:hover {
+    background-color: #2980b9;
+}
+.status {
+    padding: 10px;
+    margin-bottom: 15px;
+    border-radius: 5px;
+}
+.carregando {
+    background-color: #f9e79f;
+    border: 1px solid #f4d03f;
+}
+.erro {
+    background-color: #f5b7b1;
+    border: 1px solid #e74c3c;
+}
