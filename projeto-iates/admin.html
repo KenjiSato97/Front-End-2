@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Luxo - Administração</title>
+    <link rel="shortcut icon" href="images/barco2.png" type="image/x-icon" />
+    <link rel="stylesheet" href="css/admin.css" />
+    <script src="js/jquery-3.6.4.min.js"></script>
+    <script src="js/api.js"></script>
+</head>
+
+<body>
+    <div class="admin-container">
+        <div class="admin-header">
+            <img src="images/barco1.png" alt="ícone de barco" />
+            <h1>Luxo</h1>
+            <h2>Aluguel de iates</h2>
+        </div>
+        
+        <h3 class="admin-subtitle">Área Administrativa</h3>
+        
+        <div id="mensagem-feedback"></div>
+
+        <form id="form-admin">
+            <div class="entry">
+                <label for="email">E-mail</label>
+                <input type="email" id="email" placeholder="Digite seu e-mail" required />
+            </div>
+
+            <div class="entry">
+                <label for="senha">Senha</label>
+                <input type="password" id="senha" placeholder="Digite sua senha" required />
+            </div>
+        </form>
+
+        <div class="buttons">
+            <button id="btn-login" class="button">Entrar</button>
+        </div>
+        
+        <div class="back-link">
+            <a href="index.html">← Voltar para página inicial</a>
+        </div>
+    </div>
+</body>
+</html>

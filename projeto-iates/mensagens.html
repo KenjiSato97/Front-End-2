@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Luxo - Mensagens Recebidas</title>
+    <link rel="shortcut icon" href="images/barco2.png" type="image/x-icon" />
+    <link rel="stylesheet" href="css/mensagens.css" />
+    <script src="js/jquery-3.6.4.min.js"></script>
+    <script src="js/api.js"></script>
+</head>
+
+<body>
+    <div class="page">
+        <header>
+            <div id="title">
+        <img src="images/barco1.png" alt="ícone de barco" />
+        <div class="headtitle">
+          <h1>Luxo</h1>
+          <h2>Aluguel de iates</h2>
+        </div>
+    </div>
+    <nav>
+        <ul class="navmenu">
+            <li><a href="index.html">Página inicial</a></li>
+            <li><a href="aluguel.html">Aluguel de iates</a></li>
+            <li><a href="destinos.html">Destinos</a></li>
+            <li><a href="tripulacao.html">Tripulação</a></li>
+            <li><a href="contato.html">Contato</a></li>
+            <li><a href="admin.html" class="accent">admin</a></li>
+        </ul>
+      </nav>        
+    <div class="admin-nav">
+        <div class="admin-info">
+            Administrador logado
+        </div>
+        <button class="logout-btn" onclick="realizarLogout()">
+            Sair
+        </button>
+    </div>
+        </header>
+
+        <main>
+            <div class="page-header">
+                <h2 class="page-title">Mensagens Recebidas</h2>
+                <button id="btn-refresh" class="refresh-btn" onclick="carregarMensagens()">
+                    Atualizar
+                </button>
+            </div>
+            
+            <div id="mensagem-feedback"></div>
+            
+            <div class="stats-container">
+                <div class="stat-card">
+                    <h3 id="total-mensagens" class="stat-number">-</h3>
+                    <p class="stat-label">Total de Mensagens</p>
+                </div>
+            </div>
+
+            <div class="table-container">
+                <div class="table-header">
+                    <h3>Todas as Mensagens</h3>
+                </div>
+                
+                <div class="table-wrapper">
+                    <div id="loading-container" class="loading-state">
+                        <div class="loading-spinner"></div>
+                        <p>Carregando mensagens...</p>
+                    </div>
+                    
+                    <table id="tabela-mensagens">
+                        <thead>
+                            <tr>
+                                <th class="nome-header">Nome</th>
+                                <th class="email-header">E-mail</th>
+                                <th class="mensagem-header">Mensagem</th>
+                            </tr>
+                        </thead>
+                        <tbody id="tbody-mensagens">
+                        </tbody>
+                    </table>
+                    
+                    <div id="empty-container" class="empty-state">
+                        <h3>Nenhuma mensagem encontrada</h3>
+                        <p>Ainda não há mensagens de contato recebidas.</p>
+                    </div>
+                </div>
+            </div>
+        </main>
+    </div>
+    <footer>
+        <p>© 2023 por Luxo aluguel de iates</p>
+    </footer>
+</body>
+</html>
