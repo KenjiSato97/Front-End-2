@@ -1,3 +1,13 @@
+:root {
+    --background: #EBEBEB;
+    --darkblue: #21272b;
+    --box: #21272bc9;
+    --lightblue: #1bb4e8;
+    --ocher: #c6b07f;
+    --footer: #CBCFD3;
+    --pagefont: 'Open Sans', sans-serif;
+}
+
 body {
             font-family: Arial, sans-serif;
             margin: 0;
@@ -10,7 +20,7 @@ body {
         }
         
         .admin-container {
-            background-color: #1BB4E8;
+            background-color: var(--darkblue);
             border-radius: 15px;
             box-shadow: 0 15px 35px rgba(0, 0, 0, 0.1);
             padding: 40px;
@@ -30,7 +40,7 @@ body {
         }
         
         .admin-header h1 {
-            color: #2c3e50;
+            color: var(--background);
             margin: 0 0 5px 0;
             font-size: 2.5em;
             font-weight: 300;
@@ -83,7 +93,7 @@ body {
             display: block;
             margin-bottom: 8px;
             font-weight: 600;
-            color: #2c3e50;
+            color: var(--background);
             font-size: 14px;
         }
         
